@@ -21,8 +21,8 @@ class BaseService:
 def send_otp_via_email(to_email: str, otp_code: str):
     smtp_server = "smtp-mail.outlook.com"
     port = 587
-    sender_email = "omar.api12@hotmail.com"
-    password = "omar_API123"
+    sender_email = "email"
+    password = "password"
 
     message = MIMEMultipart(f"alternative")
     message["Subject"] = "OTP Code"
